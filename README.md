@@ -1,6 +1,8 @@
 emacs-no-easy-keys
 ==================
 
+http://danamlund.dk/emacs/no-easy-keys.html
+
 An Emacs mode to help you learn the proper Emacs movement keys
 
 This mode teaches you to use the proper Emacs movement keys in a
@@ -18,11 +20,11 @@ depending on various extensions such as icicles, ido, etc.
 To install, save no-easy-keys.el in your load path and add the
 following to your .emacs file:
 
-(require 'no-easy-keys)
+    (require 'no-easy-keys)
 
 It is enabled by default. To disable it add the following to your
 .emacs file:
 
-(no-easy-keys 0)
+    (no-easy-keys 0)
 
 You can toggle no-easy-keys using 'M-x no-easy-keys'.
