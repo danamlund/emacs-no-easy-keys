@@ -9,28 +9,6 @@
 ;; By: Dan Amlund Thomsen
 ;; Keywords: training, pinky
 
-;; COPYRIGHT NOTICE
-;;
-;; This program is free software; you can redistribute it and/or
-;; modify it under the terms of the GNU General Public License as
-;; published by the Free Software Foundation; either version 2 of the
-;; License, or (at your option) any later version.
-;;
-;; This program is distributed in the hope that it will be useful, but
-;; WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
-;; General Public License for more details.
-
-;;; Install:
-
-;; To install, save no-easy-keys.el in your load path and add the
-;; following to your .emacs file:
-;;
-;; (require 'no-easy-keys)
-;; (no-easy-keys 1)
-
-;; You can toggle no-easy-keys using 'M-x no-easy-keys'.
-
 ;;; Commentary:
 
 ;; This mode teaches you to use the proper Emacs movement keys in a
@@ -44,6 +22,14 @@
 ;; The easy keys are not disabled in the minibuffer. The minibuffer
 ;; has different proper keys replacements than regular buffers and
 ;; depending on various extensions such as icicles, ido, etc.
+
+;; To install, save no-easy-keys.el in your load path and add the
+;; following to your .emacs file:
+;;
+;; (require 'no-easy-keys)
+;; (no-easy-keys 1)
+
+;; You can toggle no-easy-keys using 'M-x no-easy-keys'.
 
 ;;; Code:
 
