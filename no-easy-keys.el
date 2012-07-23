@@ -12,7 +12,7 @@
 ;; This mode teaches you to use the proper Emacs movement keys in a
 ;; rather harsh manner.
 
-;; no-easy-keys disables arrow, end, home and delete keys, as well as
+;; No-easy-keys disables arrow, end, home and delete keys, as well as
 ;; their control and meta prefixes. When using any of these keys, you
 ;; instead get a message informing you of the proper Emacs shortcut
 ;; you should use instead (e.g. pressing down informs you to use C-n).
@@ -31,7 +31,7 @@
 ;;
 ;; (no-easy-keys 0)
 
-;; You can toggle no-easy-keys using 'M-x no-easy-keys'
+;; You can toggle no-easy-keys using 'M-x no-easy-keys'.
 
 ;;; Code:
 
