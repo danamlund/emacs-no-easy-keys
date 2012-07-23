@@ -1,11 +1,35 @@
 ;;; no-easy-keys.el --- Learn the proper Emacs movement keys
 
+;; Copyright (C) 2009-2012 Dan Amlund Thomsen
+
 ;; Author: Dan Amlund Thomsen <dan@danamlund.dk>
 ;; URL: http://danamlund.dk/emacs/no-easy-keys.html
 ;; Version: 1.0.2
 ;; Created: 2009-12-12
 ;; By: Dan Amlund Thomsen
 ;; Keywords: training, pinky
+
+;; COPYRIGHT NOTICE
+;;
+;; This program is free software; you can redistribute it and/or
+;; modify it under the terms of the GNU General Public License as
+;; published by the Free Software Foundation; either version 2 of the
+;; License, or (at your option) any later version.
+;;
+;; This program is distributed in the hope that it will be useful, but
+;; WITHOUT ANY WARRANTY; without even the implied warranty of
+;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+;; General Public License for more details.
+
+;;; Install:
+
+;; To install, save no-easy-keys.el in your load path and add the
+;; following to your .emacs file:
+;;
+;; (require 'no-easy-keys)
+;; (no-easy-keys 1)
+
+;; You can toggle no-easy-keys using 'M-x no-easy-keys'.
 
 ;;; Commentary:
 
@@ -20,18 +44,6 @@
 ;; The easy keys are not disabled in the minibuffer. The minibuffer
 ;; has different proper keys replacements than regular buffers and
 ;; depending on various extensions such as icicles, ido, etc.
-
-;; To install, save no-easy-keys.el in your load path and add the
-;; following to your .emacs file:
-;;
-;; (require 'no-easy-keys)
-
-;; It is enabled by default. To disable it add the following to your
-;; .emacs file:
-;;
-;; (no-easy-keys 0)
-
-;; You can toggle no-easy-keys using 'M-x no-easy-keys'.
 
 ;;; Code:
 
@@ -62,10 +74,10 @@ and backspace.
 Use 'M-x no-easy-keys' to toggle this mode in all buffers except
 the minibuffer.
 
-Add (no-easy-keys 0) to your .emacs to disable no-easy-keys by
+Add (no-easy-keys 1) to your .emacs to enable no-easy-keys by
 default."
 
-nil " no-easy-keys" 'no-easy-keys-minor-mode-map)
+nil nil 'no-easy-keys-minor-mode-map)
 
 (defun no-easy-keys-hook ()
   (interactive)
@@ -74,8 +86,6 @@ nil " no-easy-keys" 'no-easy-keys-minor-mode-map)
 
 (define-globalized-minor-mode no-easy-keys
   no-easy-keys-minor-mode no-easy-keys-hook)
-
-(no-easy-keys 1) ; 0 to disable
 
 (provide 'no-easy-keys)
 ;;; no-easy-keys.el ends here

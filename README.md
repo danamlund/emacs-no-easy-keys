@@ -20,11 +20,7 @@ depending on various extensions such as icicles, ido, etc.
 To install, save no-easy-keys.el in your load path and add the
 following to your .emacs file:
 
-    (require 'no-easy-keys)
-
-It is enabled by default. To disable it add the following to your
-.emacs file:
-
-    (no-easy-keys 0)
+(require 'no-easy-keys)
+(no-easy-keys 1)
 
 You can toggle no-easy-keys using 'M-x no-easy-keys'.
